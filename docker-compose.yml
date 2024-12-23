@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  commandservice:
+    image: ${DOCKER_REGISTRY-}commandservice
+    build:
+      context: .
+      dockerfile: CommandService/Dockerfile
+
+  queryservice:
+    image: ${DOCKER_REGISTRY-}queryservice
+    build:
+      context: .
+      dockerfile: QueryService/Dockerfile
+

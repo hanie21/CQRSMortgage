@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{40CA1DF5-7DA2-46FE-B52B-A9A0F0FAB811}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Listeners/RabbitMQListener.cs">
+    <Files>
+      <File FileName="Controllers/CacheController.cs" Line="29" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Dockerfile" Line="1" Column="1" />
+      <File FileName="Listeners/RabbitMQListener.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.QueryService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

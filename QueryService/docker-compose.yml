@@ -1,0 +1,16 @@
+﻿version: "3.8"
+
+services:
+  query-service:
+    build: .
+    ports:
+      - "8081:80"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"

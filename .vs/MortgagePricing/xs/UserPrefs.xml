@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{25418F99-75B5-441D-85FA-44C103AFBECC}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QueryService/Controllers/CacheController.cs">
+    <Files>
+      <File FileName="QueryService/Program.cs" />
+      <File FileName="QueryService/Controllers/CacheController.cs" Line="55" Column="10" />
+      <File FileName="QueryService/Dockerfile" />
+      <File FileName="QueryService/Listeners/RabbitMQListener.cs" />
+      <File FileName="CommandService/Controllers/MortgageController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MortgagePricing" expanded="True">
+            <Node name="CommandService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="QueryService" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CacheController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

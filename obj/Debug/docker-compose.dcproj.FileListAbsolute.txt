@@ -1,0 +1,14 @@
+/Users/haniehqasemi/MortgagePricing/bin/Debug/CommandService.deps.json
+/Users/haniehqasemi/MortgagePricing/bin/Debug/CommandService.runtimeconfig.json
+/Users/haniehqasemi/MortgagePricing/bin/Debug/appsettings.Development.json
+/Users/haniehqasemi/MortgagePricing/bin/Debug/appsettings.json
+/Users/haniehqasemi/MortgagePricing/bin/Debug/CommandService
+/Users/haniehqasemi/MortgagePricing/bin/Debug/CommandService.dll
+/Users/haniehqasemi/MortgagePricing/bin/Debug/RabbitMQ.Client.dll
+/Users/haniehqasemi/MortgagePricing/bin/Debug/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/haniehqasemi/MortgagePricing/bin/Debug/Swashbuckle.AspNetCore.Swagger.dll
+/Users/haniehqasemi/MortgagePricing/bin/Debug/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/haniehqasemi/MortgagePricing/bin/Debug/CommandService.pdb
+/Users/haniehqasemi/MortgagePricing/obj/Debug/docker-compose.dcproj.AssemblyReference.cache
+/Users/haniehqasemi/MortgagePricing/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
+/Users/haniehqasemi/MortgagePricing/obj/Debug/docker-compose.dcproj.CopyComplete
