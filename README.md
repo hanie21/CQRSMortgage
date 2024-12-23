@@ -16,6 +16,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
 ### Query Side:
 - Retrieve optimized pricing details based on mortgage policies.
 - Read model optimized for fast, efficient queries.
+- Integrated **Redis** for caching query results to enhance performance.
 
 ### Command Side:
 - Update mortgage pricing policies (e.g., interest rates, credit score requirements).
@@ -29,7 +30,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
 ## Technology Stack
 
 - **Framework**: ASP.NET Core
-- **Database**: SQL Server (for write operations), Optional NoSQL/Denormalized Database for read.
+- **Database**: SQL Server (for write operations), Redis (for read caching).
 - **Pattern**: CQRS
 - **Languages**: C#
 
@@ -43,7 +44,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
 2. **Query Side**:
    - Handles read operations.
    - Provides read-optimized data.
-   - Can utilize caching or a denormalized database for performance.
+   - Utilizes **Redis** for caching query results, reducing database load.
 
 3. **Eventual Consistency**:
    - Ensures the read database reflects write changes asynchronously.
@@ -54,6 +55,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
 
 - .NET 6.0 SDK
 - SQL Server
+- Redis
 - Any modern code editor (e.g., Visual Studio, Visual Studio Code)
 
 ### Installation
@@ -69,7 +71,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
    dotnet restore
    ```
 
-3. Update database connection strings in `appsettings.json`.
+3. Update database and Redis connection strings in `appsettings.json`.
 
 4. Apply migrations and seed data (if applicable):
    ```bash
@@ -88,7 +90,7 @@ The system is built with ASP.NET Core and follows best practices in microservice
 ### Query API
 - Endpoint: `/api/mortgage/pricing`
 - Method: `GET`
-- Description: Fetch mortgage pricing details.
+- Description: Fetch mortgage pricing details with Redis caching for enhanced performance.
 
 ### Command API
 - Endpoint: `/api/mortgage/update-policy`
@@ -98,14 +100,13 @@ The system is built with ASP.NET Core and follows best practices in microservice
 ## Project Structure
 
 - `Commands/`: Command-side handlers and models.
-- `Queries/`: Query-side handlers and models.
+- `Queries/`: Query-side handlers and models (includes Redis integration).
 - `Controllers/`: API endpoints for query and command operations.
 - `Infrastructure/`: Database context and configuration.
 
 ## Future Enhancements
 
-- Add caching to the query side for better performance.
-- Introduce messaging for eventual consistency using RabbitMQ or Azure Service Bus.
+- Add messaging for eventual consistency using RabbitMQ or Azure Service Bus.
 - Expand the read database with a NoSQL implementation for scalability.
 - Add unit and integration tests for robust coverage.
 
